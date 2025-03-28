@@ -16,6 +16,15 @@ const Navbar = () => {
     if (isOpen) setIsOpen(false);
   };
 
+  // Smooth scroll to section
+  const scrollToSection = (sectionId: string) => {
+    closeMenu();
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
   // Change navbar background on scroll
   useEffect(() => {
     const handleScroll = () => {
@@ -49,10 +58,10 @@ const Navbar = () => {
           {/* Desktop Navigation */}
           <div className="hidden md:block">
             <div className="ml-10 flex items-center space-x-8">
-              <a href="#about" className="nav-link" onClick={closeMenu}>About</a>
-              <a href="#skills" className="nav-link" onClick={closeMenu}>Skills</a>
-              <a href="#projects" className="nav-link" onClick={closeMenu}>Projects</a>
-              <a href="#contact" className="nav-link" onClick={closeMenu}>Contact</a>
+              <button onClick={() => scrollToSection('about')} className="nav-link">About</button>
+              <button onClick={() => scrollToSection('skills')} className="nav-link">Skills</button>
+              <button onClick={() => scrollToSection('projects')} className="nav-link">Projects</button>
+              <button onClick={() => scrollToSection('contact')} className="nav-link">Contact</button>
             </div>
           </div>
           
@@ -71,34 +80,30 @@ const Navbar = () => {
       {/* Mobile Navigation */}
       <div className={`md:hidden ${isOpen ? 'block' : 'hidden'}`}>
         <div className="px-2 pt-2 pb-3 space-y-1 bg-background/95 backdrop-blur-md">
-          <a 
-            href="#about" 
-            className="block px-3 py-2 rounded-md text-base nav-link"
-            onClick={closeMenu}
+          <button 
+            onClick={() => scrollToSection('about')} 
+            className="block w-full text-left px-3 py-2 rounded-md text-base nav-link"
           >
             About
-          </a>
-          <a 
-            href="#skills" 
-            className="block px-3 py-2 rounded-md text-base nav-link"
-            onClick={closeMenu}
+          </button>
+          <button 
+            onClick={() => scrollToSection('skills')} 
+            className="block w-full text-left px-3 py-2 rounded-md text-base nav-link"
           >
             Skills
-          </a>
-          <a 
-            href="#projects" 
-            className="block px-3 py-2 rounded-md text-base nav-link"
-            onClick={closeMenu}
+          </button>
+          <button 
+            onClick={() => scrollToSection('projects')} 
+            className="block w-full text-left px-3 py-2 rounded-md text-base nav-link"
           >
             Projects
-          </a>
-          <a 
-            href="#contact" 
-            className="block px-3 py-2 rounded-md text-base nav-link"
-            onClick={closeMenu}
+          </button>
+          <button 
+            onClick={() => scrollToSection('contact')} 
+            className="block w-full text-left px-3 py-2 rounded-md text-base nav-link"
           >
             Contact
-          </a>
+          </button>
         </div>
       </div>
     </nav>

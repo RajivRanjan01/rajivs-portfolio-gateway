@@ -3,6 +3,14 @@ import React from 'react';
 import { ArrowDown, Github, Linkedin } from 'lucide-react';
 
 const Hero = () => {
+  // Smooth scroll to section
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
   return (
     <section className="relative h-screen flex items-center justify-center overflow-hidden">
       {/* Background pattern */}
@@ -24,12 +32,18 @@ const Hero = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row justify-center gap-4 mb-12 animate-fade-in opacity-0" style={{ animationDelay: '1s' }}>
-            <a href="#projects" className="btn-primary flex items-center justify-center gap-2">
+            <button 
+              onClick={() => scrollToSection('projects')} 
+              className="btn-primary flex items-center justify-center gap-2"
+            >
               View My Projects
-            </a>
-            <a href="#contact" className="btn-outline flex items-center justify-center gap-2">
+            </button>
+            <button 
+              onClick={() => scrollToSection('contact')} 
+              className="btn-outline flex items-center justify-center gap-2"
+            >
               Contact Me
-            </a>
+            </button>
           </div>
           
           <div className="flex justify-center gap-6 animate-fade-in opacity-0" style={{ animationDelay: '1.2s' }}>
@@ -54,9 +68,9 @@ const Hero = () => {
       </div>
       
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <a href="#about" className="text-foreground/70 hover:text-primary transition-colors">
+        <button onClick={() => scrollToSection('about')} className="text-foreground/70 hover:text-primary transition-colors">
           <ArrowDown size={24} />
-        </a>
+        </button>
       </div>
     </section>
   );
