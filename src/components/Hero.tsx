@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { ArrowDown, GitHub, Linkedin } from 'lucide-react';
+import { ArrowDown, Github, Linkedin } from 'lucide-react';
 
 const Hero = () => {
   return (
@@ -39,7 +39,7 @@ const Hero = () => {
               rel="noopener noreferrer"
               className="text-foreground hover:text-primary transition-colors"
             >
-              <GitHub size={24} />
+              <Github size={24} />
             </a>
             <a 
               href="https://www.linkedin.com/in/rajiv-ranjan-6680b8255/" 
