@@ -1,69 +1,53 @@
-# Welcome to your Lovable project
+# Personal Portfolio Website - Rajiv Ranjan
 
-## Project info
+This is the repository for my personal portfolio website, designed to showcase my skills and projects in Java and Kotlin Android development.
 
-**URL**: https://lovable.dev/projects/65dd15ab-9b9b-4318-a855-25d5afeaf10f
+## Website Preview
 
-## How can I edit this code?
+[*(Ideally, you would include a link to your live website here once it's deployed)*](Your Live Website Link Here)
 
-There are several ways of editing your application.
+## What is this website for?
 
-**Use Lovable**
+This website serves as my online resume and portfolio, providing information about my background, skills, projects, and ways to connect with me. It's intended for:
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/65dd15ab-9b9b-4318-a855-25d5afeaf10f) and start prompting.
+* **Potential Employers and Recruiters:** To easily understand my technical abilities and experience.
+* **Networking:** To provide a central hub for my professional online presence.
+* **Personal Branding:** To showcase my passion for Android and mobile development.
 
-Changes made via Lovable will be committed automatically to this repo.
+## Key Features
 
-**Use your preferred IDE**
+* **Homepage:** Introduction with a professional overview and key skills.
+* **About Me:** Detailed information about my education, experiences, and aspirations.
+* **Projects:** A showcase of my Android development projects (to be added), highlighting the problem, technologies used, and my role.
+* **Contact:** My contact information (phone and email) and potentially a contact form.
+* **Links:** Direct links to my GitHub and LinkedIn profiles.
+* **Responsive Design:** The website is designed to look and function well on various devices (desktops, tablets, and mobile phones).
+* **Modern and Professional Design:** A clean and user-friendly interface to create a positive impression.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## Technology Stack (Planned)
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+This project is planned to be built using one of the following technology stacks:
 
-Follow these steps:
+**Option A (Java-focused):**
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+* **Backend (Optional):** Spring Boot (for potential future API needs, like a contact form).
+* **Frontend:**
+    * Thymeleaf (for server-side rendering)
+    * **OR** React/Vue.js (for a more interactive SPA, potentially with a Spring Boot backend).
+* **Database (Optional):** H2, PostgreSQL, or MySQL (if a backend with data persistence is implemented).
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+**Option B (Kotlin-focused):**
 
-# Step 3: Install the necessary dependencies.
-npm i
+* **Backend (Optional):** Ktor (for building asynchronous web applications).
+* **Frontend:**
+    * Kotlin HTML DSL (for server-side HTML generation)
+    * **OR** React/Vue.js (for a dynamic frontend with a Ktor backend).
+* **Database (Optional):** Exposed, PostgreSQL, or MySQL (if a backend with data persistence is implemented).
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+**Note:** The specific technologies used will be finalized during the development process.
 
-**Edit a file directly in GitHub**
+## Project Structure (Planned)
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+The project structure will depend on the chosen technology stack. However, it will generally follow best practices for organizing backend and frontend code separately (if a full-stack approach is taken).
 
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with .
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/65dd15ab-9b9b-4318-a855-25d5afeaf10f) and click on Share -> Publish.
-
-## I want to use a custom domain - is that possible?
-
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+**Example (Conceptual - Subject to Change):**
